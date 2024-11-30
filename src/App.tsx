@@ -1,24 +1,15 @@
-import {
-  SignedIn,
-  SignedOut,
-  SignIn,
-  SignOutButton,
-  UserButton,
-} from "@clerk/clerk-react";
-import Sidebar from "./components/Sidebar";
+import { SignedIn, SignedOut } from "@clerk/clerk-react";
+import Dashboard from "./pages/Dashboard";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
     <header>
       <SignedOut>
-        <SignIn />
+        <Home />
       </SignedOut>
       <SignedIn>
-        <div className="flex items-center justify-center">
-          <Sidebar />
-          <UserButton />
-          <SignOutButton />
-        </div>
+        <Dashboard />
       </SignedIn>
     </header>
   );
