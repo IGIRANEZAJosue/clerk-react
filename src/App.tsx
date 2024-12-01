@@ -1,16 +1,23 @@
-import { SignedIn, SignedOut } from "@clerk/clerk-react";
-import Dashboard from "./pages/Dashboard";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import DefaultLayout from "./layouts/default";
 import Home from "./pages/Home";
+import DashboardLayout from "./layouts/dashboard";
+import Dashboard from "./pages/Dashboard";
+
+const routes = createBrowserRouter([
+  {
+    element: <DefaultLayout />,
+    children: [
+      { path: "/", element: <Home /> },
+      {
+        element: <DashboardLayout />,
+        path: "dashboard",
+        children: [{ path: "/dashboard", element: <Dashboard /> }],
+      },
+    ],
+  },
+]);
 
 export default function App() {
-  return (
-    <header>
-      <SignedOut>
-        <Home />
-      </SignedOut>
-      <SignedIn>
-        <Dashboard />
-      </SignedIn>
-    </header>
-  );
+  return <RouterProvider router={routes} />;
 }
