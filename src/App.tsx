@@ -12,7 +12,7 @@ const routes = createBrowserRouter([
       {
         element: <DashboardLayout />,
         path: "dashboard",
-        children: [{ path: "/dashboard", element: <Dashboard /> }],
+        children: [{ index: true, element: <Dashboard /> }],
       },
     ],
   },
