@@ -17,19 +17,19 @@ export default function Sidebar() {
 						<i className="fa-regular fa-objects-column"></i>
 						Dashboard
 					</NavLink>
-					<NavLink className="nav-link" to={"/"}>
+					<NavLink className="nav-link" to={"team"}>
 						<i className="fa-regular fa-user-group"></i>
 						Team
 					</NavLink>
-					<NavLink className="nav-link" to={"/"}>
+					<NavLink className="nav-link" to={"projects"}>
 						<i className="fa-regular fa-folder-closed"></i>
 						Projects
 					</NavLink>
-					<NavLink className="nav-link" to={"/"}>
+					<NavLink className="nav-link" to={"calendar"}>
 						<i className="fa-regular fa-calendar-lines"></i>
 						Calendar
 					</NavLink>
-					<NavLink className="nav-link" to={"/"}>
+					<NavLink className="nav-link" to={"documents"}>
 						<i className="fa-regular fa-folder-open"></i>
 						Documents
 					</NavLink>

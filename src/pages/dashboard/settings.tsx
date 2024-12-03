@@ -43,7 +43,7 @@ export default function Settings() {
 						</div>
 					</div>
 
-					<button className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">
+					<button className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-500">
 						Save Changes
 					</button>
 				</div>
