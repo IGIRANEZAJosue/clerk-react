@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
 	return (
-		<aside className=" bg-white border border-gray-200 font-dm-sans text-gray-900 text-start h-screen w-1/5 p-4 ">
+		<aside className=" bg-white border border-gray-200 font-lato text-gray-900 text-start h-screen w-1/5 p-4 ">
 			<div className="flex items-center gap-4 p-4 bg-[#1A2B3E] rounded-xl">
 				<img
 					className="size-8"
