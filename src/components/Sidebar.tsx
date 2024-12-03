@@ -26,15 +26,15 @@ export default function Sidebar() {
 						Projects
 					</NavLink>
 					<NavLink className="nav-link" to={"/"}>
-						<i class="fa-regular fa-calendar-lines"></i>
+						<i className="fa-regular fa-calendar-lines"></i>
 						Calendar
 					</NavLink>
 					<NavLink className="nav-link" to={"/"}>
-						<i class="fa-regular fa-folder-open"></i>
+						<i className="fa-regular fa-folder-open"></i>
 						Documents
 					</NavLink>
 					<NavLink className="nav-link" to={"settings"}>
-						<i class="fa-regular fa-gear"></i>
+						<i className="fa-regular fa-gear"></i>
 						Settings
 					</NavLink>
 				</ul>
