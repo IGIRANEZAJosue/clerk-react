@@ -11,25 +11,30 @@ export default function Sidebar() {
 				/>
 				<h1 className="font-bold text-2xl text-white">Sidebar.tsx</h1>
 			</div>
-			<div className="flex items-start justify-start my-8 w-full font-inter text-sm">
+			<div className="flex items-start justify-start my-8 w-full text-sm font-lato">
 				<ul className="text-xl w-full">
 					<NavLink className="nav-link" to={""}>
 						<i className="fa-regular fa-objects-column"></i>
 						Dashboard
 					</NavLink>
 					<NavLink className="nav-link" to={"/"}>
+						<i className="fa-regular fa-user-group"></i>
 						Team
 					</NavLink>
 					<NavLink className="nav-link" to={"/"}>
+						<i className="fa-regular fa-folder-closed"></i>
 						Projects
 					</NavLink>
 					<NavLink className="nav-link" to={"/"}>
+						<i class="fa-regular fa-calendar-lines"></i>
 						Calendar
 					</NavLink>
 					<NavLink className="nav-link" to={"/"}>
+						<i class="fa-regular fa-folder-open"></i>
 						Documents
 					</NavLink>
 					<NavLink className="nav-link" to={"settings"}>
+						<i class="fa-regular fa-gear"></i>
 						Settings
 					</NavLink>
 				</ul>
