@@ -14,6 +14,7 @@ export default function Sidebar() {
 			<div className="flex items-start justify-start my-8 w-full font-inter text-sm">
 				<ul className="text-xl w-full">
 					<NavLink className="nav-link" to={""}>
+						<i className="fa-regular fa-objects-column"></i>
 						Dashboard
 					</NavLink>
 					<NavLink className="nav-link" to={"/"}>
