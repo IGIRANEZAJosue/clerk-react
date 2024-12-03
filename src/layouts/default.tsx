@@ -1,5 +1,10 @@
 import { Navigate, Outlet, useNavigate } from "react-router-dom";
-import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-react";
+import {
+	ClerkProvider,
+	RedirectToSignIn,
+	SignedIn,
+	SignedOut,
+} from "@clerk/clerk-react";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -20,7 +25,10 @@ export default function DefaultLayout() {
 				<Navigate to="/dashboard" />
 			</SignedIn>
 			<SignedOut>
-				<Navigate to="/login" />
+				<RedirectToSignIn
+					signInForceRedirectUrl="/login"
+					signUpForceRedirectUrl="/signup"
+				/>
 			</SignedOut>
 			<main className="min-h-screen h-screen">
 				<Outlet />
