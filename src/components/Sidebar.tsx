@@ -13,40 +13,22 @@ export default function Sidebar() {
 			</div>
 			<div className="flex items-start justify-start my-8 w-full font-inter text-sm">
 				<ul className="text-xl w-full">
-					<NavLink
-						className="flex gap-4 p-4 rounded-lg hover:pl-6 hover:text-indigo-400 hover:bg-gray-100 duration-150 w-fill"
-						to={""}
-					>
+					<NavLink className="nav-link" to={""}>
 						Dashboard
 					</NavLink>
-					<NavLink
-						className="flex gap-4 p-4 rounded-lg hover:pl-6 hover:text-indigo-400 hover:bg-gray-100 duration-150 w-fill"
-						to={"/"}
-					>
+					<NavLink className="nav-link" to={"/"}>
 						Team
 					</NavLink>
-					<NavLink
-						className="flex gap-4 p-4 rounded-lg hover:pl-6 hover:text-indigo-400 hover:bg-gray-100 duration-150 w-fill"
-						to={"/"}
-					>
+					<NavLink className="nav-link" to={"/"}>
 						Projects
 					</NavLink>
-					<NavLink
-						className="flex gap-4 p-4 rounded-lg hover:pl-6 hover:text-indigo-400 hover:bg-gray-100 duration-150 w-fill"
-						to={"/"}
-					>
+					<NavLink className="nav-link" to={"/"}>
 						Calendar
 					</NavLink>
-					<NavLink
-						className="flex gap-4 p-4 rounded-lg hover:pl-6 hover:text-indigo-400 hover:bg-gray-100 duration-150 w-fill"
-						to={"/"}
-					>
+					<NavLink className="nav-link" to={"/"}>
 						Documents
 					</NavLink>
-					<NavLink
-						className="flex gap-4 p-4 rounded-lg hover:pl-6 hover:text-indigo-400 hover:bg-gray-100 duration-150 w-fill"
-						to={"settings"}
-					>
+					<NavLink className="nav-link" to={"settings"}>
 						Settings
 					</NavLink>
 				</ul>

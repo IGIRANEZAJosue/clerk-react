@@ -2,3 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-link {
+	@apply flex gap-4 p-4 rounded-lg hover:pl-6 hover:text-indigo-400 hover:bg-gray-100 duration-150 w-fill;
+}
