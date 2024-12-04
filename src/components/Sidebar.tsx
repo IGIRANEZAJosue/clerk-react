@@ -13,27 +13,57 @@ export default function Sidebar() {
 			</div>
 			<div className="flex items-start justify-start my-8 w-full text-sm font-lato">
 				<ul className="text-xl w-full">
-					<NavLink className="nav-link" to={""}>
+					<NavLink
+						className={({ isActive }) =>
+							isActive ? "nav-link active" : "nav-link"
+						}
+						to={""}
+					>
 						<i className="fa-regular fa-objects-column"></i>
 						Dashboard
 					</NavLink>
-					<NavLink className="nav-link" to={"team"}>
+					<NavLink
+						className={({ isActive }) =>
+							isActive ? "nav-link active" : "nav-link"
+						}
+						to={"team"}
+					>
 						<i className="fa-regular fa-user-group"></i>
 						Team
 					</NavLink>
-					<NavLink className="nav-link" to={"projects"}>
+					<NavLink
+						className={({ isActive }) =>
+							isActive ? "nav-link active" : "nav-link"
+						}
+						to={"projects"}
+					>
 						<i className="fa-regular fa-folder-closed"></i>
 						Projects
 					</NavLink>
-					<NavLink className="nav-link" to={"calendar"}>
+					<NavLink
+						className={({ isActive }) =>
+							isActive ? "nav-link active" : "nav-link"
+						}
+						to={"calendar"}
+					>
 						<i className="fa-regular fa-calendar-lines"></i>
 						Calendar
 					</NavLink>
-					<NavLink className="nav-link" to={"documents"}>
+					<NavLink
+						className={({ isActive }) =>
+							isActive ? "nav-link active" : "nav-link"
+						}
+						to={"documents"}
+					>
 						<i className="fa-regular fa-folder-open"></i>
 						Documents
 					</NavLink>
-					<NavLink className="nav-link" to={"settings"}>
+					<NavLink
+						className={({ isActive }) =>
+							isActive ? "nav-link active" : "nav-link"
+						}
+						to={"settings"}
+					>
 						<i className="fa-regular fa-gear"></i>
 						Settings
 					</NavLink>
