@@ -14,10 +14,11 @@ export default function Sidebar() {
 			<div className="flex items-start justify-start my-8 w-full text-sm font-lato">
 				<ul className="text-xl w-full">
 					<NavLink
+						end
 						className={({ isActive }) =>
 							isActive ? "nav-link active" : "nav-link"
 						}
-						to={""}
+						to={"/dashboard"}
 					>
 						<i className="fa-regular fa-objects-column"></i>
 						Dashboard
