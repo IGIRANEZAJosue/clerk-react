@@ -4,9 +4,9 @@
 @tailwind utilities;
 
 .nav-link {
-	@apply flex flex-row items-center gap-4 p-4 rounded-lg hover:pl-6 hover:text-indigo-500 hover:bg-gray-100 duration-300 w-full;
+  @apply flex flex-col justify-center lg:flex-row items-center gap-4 p-4 rounded-lg lg:hover:pl-6 hover:text-indigo-500 hover:bg-gray-100 duration-300 w-full;
 }
 
- .active {
-	@apply bg-gray-100 text-indigo-500
+.active {
+  @apply bg-gray-100 text-indigo-500;
 }
