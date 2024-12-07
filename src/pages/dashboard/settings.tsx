@@ -1,7 +1,7 @@
 export default function Settings() {
   return (
     <div className="min-h-screen bg-gray-100">
-      <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6">
+      <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-4 lg:p-6">
         <h1 className="text-2xl font-bold mb-6">Settings</h1>
 
         <div className="space-y-6">
