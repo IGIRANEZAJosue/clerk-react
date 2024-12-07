@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .nav-link {
-  @apply flex flex-col justify-center lg:flex-row items-center gap-4 p-4 rounded-lg lg:hover:pl-6 hover:text-indigo-500 hover:bg-gray-100 duration-300 w-full;
+  @apply flex flex-col justify-center size-12 lg:size-auto lg:flex-row items-center gap-4 p-4 rounded-lg lg:hover:pl-6 hover:text-indigo-500 hover:bg-gray-100 duration-300 w-full;
 }
 
 .active {
