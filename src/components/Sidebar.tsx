@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { sidebarLinks } from "../data/sidebar";
 
 export default function Sidebar() {
 	return (
@@ -15,61 +16,18 @@ export default function Sidebar() {
 			</div>
 			<div className="flex items-start justify-start my-8 w-full font-lato">
 				<ul className="flex flex-col gap-2 text-lg w-full">
-					<NavLink
-						end
-						className={({ isActive }) =>
-							isActive ? "nav-link active" : "nav-link"
-						}
-						to={"/dashboard"}
-					>
-						<i className="fa-regular fa-objects-column"></i>
-						<p className="hidden lg:flex"> Dashboard</p>
-					</NavLink>
-					<NavLink
-						className={({ isActive }) =>
-							isActive ? "nav-link active" : "nav-link"
-						}
-						to={"team"}
-					>
-						<i className="fa-regular fa-user-group"></i>
-						<p className="hidden lg:flex"> Team</p>
-					</NavLink>
-					<NavLink
-						className={({ isActive }) =>
-							isActive ? "nav-link active" : "nav-link"
-						}
-						to={"projects"}
-					>
-						<i className="fa-regular fa-folder-closed"></i>
-						<p className="hidden lg:flex"> Projects</p>
-					</NavLink>
-					<NavLink
-						className={({ isActive }) =>
-							isActive ? "nav-link active" : "nav-link"
-						}
-						to={"calendar"}
-					>
-						<i className="fa-regular fa-calendar-lines"></i>
-						<p className="hidden lg:flex"> Calendar</p>
-					</NavLink>
-					<NavLink
-						className={({ isActive }) =>
-							isActive ? "nav-link active" : "nav-link"
-						}
-						to={"documents"}
-					>
-						<i className="fa-regular fa-folder-open"></i>
-						<p className="hidden lg:flex"> Documents</p>
-					</NavLink>
-					<NavLink
-						className={({ isActive }) =>
-							isActive ? "nav-link active" : "nav-link"
-						}
-						to={"settings"}
-					>
-						<i className="fa-regular fa-gear"></i>
-						<p className="hidden lg:flex"> Settings</p>
-					</NavLink>
+					{sidebarLinks.map((link) => (
+						<NavLink
+							end
+							className={({ isActive }) =>
+								isActive ? "nav-link active" : "nav-link"
+							}
+							to={link.path}
+						>
+							<i className={`fa-regular ${link.icon}`}></i>
+							<p className="hidden lg:flex capitalize">{link.title}</p>
+						</NavLink>
+					))}
 				</ul>
 			</div>
 		</aside>
