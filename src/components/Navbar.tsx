@@ -5,7 +5,7 @@ export default function Navbar() {
 	const title = location.pathname.split("/").pop() || "dashboard";
 
 	return (
-		<div className="flex items-center font-lato justify-between p-4 border-y-2 border-gray-300 w-full">
+		<div className="flex items-center font-lato justify-between p-4 border-y border-gray-300 shadow-sm w-full">
 			<h1 className="font-bold text-xl lg:text-3xl capitalize">{title}</h1>
 			<UserButton />
 		</div>
